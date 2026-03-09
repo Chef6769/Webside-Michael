@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Engineer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary-color: #0f4c81; /* blue */
+  --secondary-color: #3cb371; /* green */
+  --bg-color: #f0f4f8;
+  --text-color: #1f2937;
+}
+
+body{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin:0;
+  background-image: url("Kon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-color);}
+
+header{
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color:white;
+  padding:50px 20px;
+  text-align:center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+header h1{
+  font-size:3em;
+  margin:0;
+}
+header p{
+  font-size:1.3em;
+  margin-top:10px;
+}
+header img.profile-pic{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:20px 0;
+  border:4px solid white;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  background: #ffffff;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  flex-wrap:wrap;
+}
+nav a{
+  color: var(--primary-color);
+  padding:16px 25px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+nav a:hover{
+  background: var(--secondary-color);
+  color:white;
+  border-radius:10px;
+}
+
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:60px 20px;
+}
+.card{
+  background:white;
+  border-radius:15px;
+  padding:40px;
+  box-shadow:0 12px 25px rgba(0,0,0,0.1);
+  margin-bottom:50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow:0 18px 35px rgba(0,0,0,0.15);
+}
+
+h1,h2{
+  text-align:center;
+  color: var(--primary-color);
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.gallery img{
+  width:100%;
+  border-radius:12px;
+  object-fit:cover;
+  transition: transform 0.3s;
+}
+.gallery img:hover{
+  transform: scale(1.05);
+}
+footer{
+  text-align:center;
+  padding:30px;
+  background: var(--primary-color);
+  color:white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top:40px;
+}
+button.pdf-btn{
+  background: var(--secondary-color);
+  color:white;
+  padding:12px 25px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+  margin-top:20px;
+  font-weight:600;
+}
+button.pdf-btn:hover{
+  background: var(--primary-color);
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Gurschler Michael</h1>
+<!-- Profile image inserted here -->
+<img src="images/Bewerber Foto.jpg" alt="Profile Picture" class="profile-pic">
+<p>Design Engineer Portfolio</p>
+</header>
+
+<nav>
+<a href="#about">About Me</a>
+<a href="#cv">CV</a>
+<a href="#motivation">Motivation Letter</a>
+<a href="#gallery">My Live</a>
+</nav>
+
+<section id="about">
+<div class="card">
+<h2>About Me</h2>
+<p>Hello, my name is Gurschler Michael and I am 21 years old. I like to work together with other people and enjoy team work. I am very active and I like sports, especially football, boxing, and swimming. I also like to ride my motorcycle and spend time outside. I enjoy going out with my friends and meeting new people. I am friendly, open, and always try to learn new things. I am curious about how things work and I like to build and design things. I have loved Rolls-Royce cars since I was a child, and I am a big car fan in general. This is why I want to work as a design engineer. I am motivated, hardworking, and I like to take on new challenges while learning every day.</p>
+</div>
+</section>
+
+<section id="cv">
+<div class="card">
+<h2>Curriculum Vitae</h2>
+<iframe src="docs/CV_GurschlerMichael_09.03.2026.pdf" width="100%" height="650px" style="border:none;border-radius:12px;"></iframe>
+<!-- PDF Embed Example -->
+<!-- <iframe src="cv.pdf" width="100%" height="650px" style="border:none;border-radius:12px;"></iframe> -->
+</div>
+</section>
+
+<section id="motivation">
+<div class="card">
+<h2>Motivation Letter</h2>
+<iframe src="docs/MotivationLetter_GurschlerMichael_09.03.2026.pdf" width="100%" height="650px" style="border:none;border-radius:12px;"></iframe>
+<!-- PDF Embed Example -->
+<!-- <iframe src="motivation.pdf" width="100%" height="650px" style="border:none;border-radius:12px;"></iframe> -->
+</div>
+</section>
+
+<section id="gallery">
+<div class="card">
+<h2>My live</h2>
+<div class="gallery">
+<img src="images/Augstenberg.jpg" alt="Hobby">
+<img src="images/B.jpg" alt="Hobby">
+<img src="images/Berserker.jpg" alt="Hobby">
+<img src="images/Ich.jpg" alt="Hobby">
+<img src="images/RR.jpg" alt="Hobby">
+<img src="images/S.jpg" alt="Hobby">
+<img src="images/Tisch.jpg" alt="Hobby">
+<img src="images/BMW.jpg" alt="Hobby">
+<img src="images/F.jpg" alt="Hobby">
+</div>
+</div>
+</section>
+
+<footer>
+<p>Contact: gurschler.michi@gmail.com</p>
+</footer>
+
+</body>
+</html>
